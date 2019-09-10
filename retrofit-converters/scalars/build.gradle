@@ -1,0 +1,14 @@
+apply plugin: 'java-library'
+
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
+dependencies {
+    compile project(':retrofit')
+    testCompile 'junit:junit:4.12'
+    testCompile 'com.squareup.okhttp3:mockwebserver:3.14.0'
+    testCompile 'org.assertj:assertj-core:1.7.0'
+    compileOnly 'com.google.code.findbugs:jsr305:3.0.2'
+}
+
+description = 'Converter: Java Scalars'
